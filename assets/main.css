@@ -1,0 +1,26 @@
+:root {
+  --color-primary: ##CBE346;
+  --color-light: #FFFFFF;
+  --color-dark: #1e2335;
+  --color-dark-two: #2b3049;
+  --color-dark-three: #282e47;
+  --color-grey: #787878;
+  --color-grey-lighter: #f3f4f8;
+  --max-width: 1200px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 16px;
+}
