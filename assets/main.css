@@ -1,5 +1,5 @@
 :root {
-  --color-primary: ##CBE346;
+  --color-primary: #CBE346;
   --color-light: #FFFFFF;
   --color-dark: #1e2335;
   --color-dark-two: #2b3049;
@@ -17,10 +17,19 @@
 
 body {
   margin: 0;
+  color: var(--color-dark);
 }
 
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 16px;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-grey {
+  color: var(--color-grey);
 }

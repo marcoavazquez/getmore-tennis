@@ -1,0 +1,26 @@
+section.history {
+  background-color: var(--color-grey-lighter);
+  padding: 72px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.history .history--text {
+  padding: 32px 0;
+}
+
+section.history a {
+  align-self: flex-end;
+}
+
+@media screen and (min-width: 960px) {
+  section.history .history--container {
+    display: flex;
+    gap: 50px;
+  }
+
+  section.history .history--title {
+    margin: 0;
+  }
+}

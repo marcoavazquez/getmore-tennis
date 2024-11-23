@@ -1,0 +1,41 @@
+.button {
+  display: inline-flex;
+  text-transform: uppercase;
+
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 52px;
+  padding: 16px 32px;
+}
+
+a.button {
+  text-decoration: none;
+}
+
+.button-light {
+  color: var(--color-light);
+  border-color: var(--color-light);
+}
+
+.button-dark {
+  color: var(--color-dark);
+  border-color: var(--color-dark);
+}
+
+.button-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.button-icon svg,
+.button-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.button-light.button-icon svg,
+.button-light.button-icon img {
+  filter: invert();
+}

@@ -1,0 +1,24 @@
+.image-banner {
+  height: 785px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.image-banner img.image-banner--image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+.image-banner h2 {
+  color: var(--color-light);
+  font-size: 200%;
+}
+
+.image-banner .container {
+  width: 100%;
+}
