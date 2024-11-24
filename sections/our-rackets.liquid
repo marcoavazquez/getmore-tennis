@@ -1,19 +1,51 @@
+{{ 'our-rackets.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+  .our-rackets--controls {
+    background-image: url({{'ball-color.jpg'|asset_url}});
+    background-size: cover;
+  }
+{% endstyle %}
+
 <section class="our-rackets">
   <div class="our-rackets--controls">
-    <h3>Nuestras <b>Raquetas</b></h3>
-    <span> Conoce nuestras raquetas y aprende a jugar Tennis cómo un profesional </span>
-    <ul>
-      <li></li>
-    </ul>
-    <div class="our-rackets--controls-buttons">
-      <button class="button button-light button-icon">p</button>
-      <button class="button button-light button-icon">n</button>
+    <div class="our-rackets--controls-content">
+      <h3>Nuestras <b>Raquetas</b></h3>
+      <span> Conoce nuestras raquetas y aprende a jugar Tennis cómo un profesional </span>
+      <ul>
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div class="our-rackets--controls-buttons">
+        <button class="disabled">
+          <img src="{{ 'arrow.svg' | asset_url }}" alt="Anterior">
+        </button>
+        <button>
+          <img src="{{ 'arrow.svg' | asset_url }}" alt="Siguiente">
+        </button>
+      </div>
     </div>
   </div>
   <div class="our-rackets--items">
     <ul>
-      AQUI MOSTRAR LOS PRODUCTOS DESDE EL ADMIN
-      <li class="our-rackets--item">P 1</li>
+      <li class="our-rackets--item">
+        <span>1</span>
+        <img src="{{ 'racket.jpg' | asset_url }}" alt="Raqueta 1">
+      </li>
+      <li class="our-rackets--item">
+        <span>2</span>
+        <img src="{{ 'racket.jpg' | asset_url }}" alt="Raqueta 1">
+      </li>
+      <li class="our-rackets--item">
+        <span>3</span>
+        <img src="{{ 'racket.jpg' | asset_url }}" alt="Raqueta 1">
+      </li>
+      <li class="our-rackets--item">
+        <span>4</span>
+        <img src="{{ 'racket.jpg' | asset_url }}" alt="Raqueta 1">
+      </li>
     </ul>
   </div>
 </section>

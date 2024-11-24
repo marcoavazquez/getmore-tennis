@@ -15,6 +15,7 @@ section.history a {
 }
 
 @media screen and (min-width: 960px) {
+
   section.history .history--container {
     display: flex;
     gap: 50px;

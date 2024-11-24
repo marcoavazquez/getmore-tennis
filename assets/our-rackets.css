@@ -1,0 +1,100 @@
+section.our-rackets {
+  max-width: 1920px;
+}
+
+section.our-rackets .our-rackets--controls {
+  color: var(--color-light);
+  display: flex;
+  justify-content: end;
+  padding: 62px;
+}
+
+section.our-rackets .our-rackets--controls-content {
+  max-width: 300px;
+}
+
+section.our-rackets .our-rackets--controls h3 {
+  font-size: 50px;
+  margin: 0;
+}
+
+section.our-rackets .our-rackets--controls ul {
+  list-style: none;
+  padding: 36px 0;
+  display: flex;
+  gap: 20px;
+}
+
+section.our-rackets .our-rackets--controls ul li {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-light);
+  border-radius: 8px;
+}
+
+section.our-rackets .our-rackets--controls ul li.active {
+  background-color: var(--color-primary);
+}
+
+
+section.our-rackets .our-rackets--controls-buttons button {
+  background-color: var(--color-primary);
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  margin-right: 20px;
+  box-shadow: 0 8px 8px rgb(0 0 0 / 0.3);
+
+  display: inline-grid;
+  place-content: center;
+}
+
+section.our-rackets .our-rackets--controls-buttons button:first-child img {
+  transform: rotate(180deg) translateX(2px);
+}
+
+section.our-rackets .our-rackets--controls-buttons button.disabled {
+  background-color: rgb(255 255 255 / 0.2);
+  border-color: var(--color-light);
+  box-shadow: none;
+}
+
+section.our-rackets .our-rackets--items {
+  overflow-x: auto;
+  padding: 50px;
+}
+
+section.our-rackets .our-rackets--items ul {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+}
+
+section.our-rackets .our-rackets--items ul li {
+  position: relative
+}
+
+section.our-rackets .our-rackets--items ul li span {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: grid;
+  place-content: center;
+}
+
+@media screen and (min-width: 960px) {
+  section.our-rackets {
+    display: flex;
+  }
+
+  section.our-rackets .our-rackets--controls {
+    min-width: 530px;
+  }
+}

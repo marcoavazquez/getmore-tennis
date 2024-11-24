@@ -33,11 +33,15 @@
     },
     "our_rackets": {
       "type": "our-rackets"
-    }
+    },
+    "seconday_banner": {
+      "type": "secondary-banner"
+    },
   },
   "order": [
     "image_banner",
     "history",
-    "our_rackets"
+    "our_rackets",
+    "seconday_banner"
   ]
 }
