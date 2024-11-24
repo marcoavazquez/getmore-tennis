@@ -37,11 +37,15 @@
     "seconday_banner": {
       "type": "secondary-banner"
     },
+    "footer": {
+      "type": "footer"
+    }
   },
   "order": [
     "image_banner",
     "history",
     "our_rackets",
-    "seconday_banner"
+    "seconday_banner",
+    "footer"
   ]
 }

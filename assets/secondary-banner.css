@@ -1,6 +1,7 @@
 section.secondary-banner {
   height: 400px;
   overflow: hidden;
+  font-size: 0;
 }
 
 section.secondary-banner img {
