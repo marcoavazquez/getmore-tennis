@@ -6,7 +6,7 @@
   --color-dark-three: #282e47;
   --color-grey: #787878;
   --color-grey-lighter: #f3f4f8;
-  --max-width: 1200px;
+  --max-width: 1160px;
 }
 
 @font-face {
@@ -53,7 +53,7 @@ ul {
 }
 
 .container {
-  max-width: var(--max-width);
+  max-width: calc(var(--max-width) + 72px);
   margin: 0 auto;
   padding: 0 36px;
 }
@@ -64,4 +64,16 @@ ul {
 
 .text-grey {
   color: var(--color-grey);
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 0 120px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0 36px;
+  }
 }

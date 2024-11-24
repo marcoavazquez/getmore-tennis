@@ -1,24 +1,18 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
-
+{% style %}
+  .image-banner {
+    background-image: url({{'hero.jpg'|asset_url}});
+    background-size: cover;
+    background-position: center;
+  }
+  @media screen and (min-width: 960px) {
+    background-image: url({{'hero@2x.jpg'|asset_url}});
+  }
+  @media screen and (min-width: 2560px) {
+    background-image: url({{'hero@3x.jpg'|asset_url}});
+  }
+{% endstyle %}
 <div class="image-banner">
-  <img
-    src="{{ 'hero.jpg' | asset_url }}"
-    srcset="
-      {{ 'hero@2x.jpg' | asset_url | image_url: width: 1024 }} 2560w,
-      {{ 'hero@3x.jpg' | asset_url | image_url: width: 1920 }} 3840w
-    "
-    sizes="
-      (max-width: 480px) 100vw,
-      (max-width: 768px) 50vw,
-      (max-width: 1024px) 33vw,
-      1920px
-    "
-    width="1920"
-    height="1080"
-    class="image-banner--image"
-    fetchpriority="high"
-    alt="Descripción de la imagen optimizada"
-  >
   <div class="container">
     {%- for block in section.blocks -%}
       {%- case block.type -%}

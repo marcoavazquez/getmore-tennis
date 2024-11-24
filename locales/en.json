@@ -1,0 +1,41 @@
+{
+  "general": {
+    "social": {
+      "links": {
+        "twitter": "X (Twitter)",
+        "facebook": "Facebook",
+        "instagram": "Instagram",
+        "vimeo": "Vimeo",
+      }
+    }
+  },
+  "templates": {
+    "404": {
+      "title": "Page not found",
+      "subtext": "404"
+    }
+  },
+  "sections": {
+    "header": {
+      "menu": {
+        "home": "Home",
+        "about": "About",
+        "history": "History",
+        "contact": "Contact",
+      },
+    },
+    "image-banner": {
+      "title": "The best <strong>tennis</strong> rackets",
+      "button": "About us",
+    },
+    "history": {
+      "title": "<span>Rackets.</span><span>Accessories.</span><span>Balls.</span>",
+      "description": "Know our rackets and learn to play Tennis like a pro.",
+      "button": "History"
+    },
+    "our-rackets": {
+      "title": "Our <strong>Rackets</strong>",
+      "description": "Know our rackets and learn to play Tennis like a pro.",
+    },
+  }
+}

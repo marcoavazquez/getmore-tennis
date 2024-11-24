@@ -1,0 +1,41 @@
+{
+  "general": {
+    "social": {
+      "links": {
+        "twitter": "X (Twitter)",
+        "facebook": "Facebook",
+        "instagram": "Instagram",
+        "vimeo": "Vimeo",
+      }
+    }
+  },
+  "templates": {
+    "404": {
+      "title": "Página no encontrada",
+      "subtext": "404"
+    }
+  },
+  "sections": {
+    "header": {
+      "menu": {
+        "home": "Inicio",
+        "about": "Acerca de",
+        "history": "Historia",
+        "contact": "Contacto",
+      },
+    },
+    "image-banner": {
+      "title": "Las mejores raquetas para jugar <strong>tenis</strong>",
+      "button": "Acerca de nosotros",
+    },
+    "history": {
+      "title": "<span>Raquetas.</span><span>Accesorios.</span><span>Pelotas.</span>",
+      "description": "Conoce nuestras raquetas y aprende a jugar Tennis como un profesional.",
+      "button": "Historia"
+    },
+    "our-rackets": {
+      "title": "Nuestras <strong>raquetas</strong>",
+      "description": "Conoce nuestras raquetas y aprende a jugar Tennis como un profesional.",
+    },
+  }
+}

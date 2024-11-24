@@ -13,10 +13,9 @@
       <h3>Nuestras <b>Raquetas</b></h3>
       <p>Conoce nuestras raquetas y aprende a jugar Tennis cómo un profesional.</p>
       <ul class="our-rackets--controls-dots">
-        <li class="active"></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        {%- for product in collections.all.products %}
+          <li class="{%- if forloop.index == 1  %} active {%- endif  %}"></li>
+        {%- endfor %}
       </ul>
       <div class="our-rackets--controls-buttons">
         <button class="disabled">
@@ -30,22 +29,12 @@
   </div>
   <div class="our-rackets--items">
     <ul>
-      <li class="our-rackets--item">
-        <span>1</span>
-        <img src="{{ 'racket.jpg' | asset_url }}" alt="Raqueta 1">
-      </li>
-      <li class="our-rackets--item">
-        <span>2</span>
-        <img src="{{ 'racket.jpg' | asset_url }}" alt="Raqueta 1">
-      </li>
-      <li class="our-rackets--item">
-        <span>3</span>
-        <img src="{{ 'racket.jpg' | asset_url }}" alt="Raqueta 1">
-      </li>
-      <li class="our-rackets--item">
-        <span>4</span>
-        <img src="{{ 'racket.jpg' | asset_url }}" alt="Raqueta 1">
-      </li>
+      {%- for product in collections.all.products %}
+        <li class="our-rackets--item">
+          <span class="our-rackets--item-index">{{ forloop.index }}</span>
+          <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+        </li>
+      {%- endfor %}
     </ul>
   </div>
 </section>

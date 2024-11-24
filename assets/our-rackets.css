@@ -3,52 +3,52 @@ section.our-rackets {
   margin: 0 auto;
 }
 
-section.our-rackets .our-rackets--controls {
+.our-rackets--controls {
   color: var(--color-light);
   display: flex;
   justify-content: end;
   padding: 62px;
 }
 
-section.our-rackets .our-rackets--controls-content {
+.our-rackets--controls-content {
   max-width: 300px;
 }
 
-section.our-rackets .our-rackets--controls h3 {
+.our-rackets--controls h3 {
   font-size: 50px;
   line-height: 64px;
   margin: 0;
 }
 
-section.our-rackets .our-rackets--controls p {
+.our-rackets--controls p {
   line-height: 30px;
   letter-spacing: 0.5px;
 }
 
-section.our-rackets .our-rackets--controls ul {
+.our-rackets--controls ul {
   list-style: none;
   padding: 36px 0;
   display: flex;
   gap: 22px;
 }
 
-section.our-rackets .our-rackets--controls ul li {
+.our-rackets--controls ul li {
   width: 8px;
   height: 8px;
   background-color: var(--color-light);
   border-radius: 8px;
 }
 
-section.our-rackets .our-rackets--controls ul li.active {
+.our-rackets--controls ul li.active {
   background-color: var(--color-primary);
 }
 
-section.our-rackets .our-rackets--controls-buttons button {
+.our-rackets--controls-buttons button {
   margin-left: -10px;
 }
 
 
-section.our-rackets .our-rackets--controls-buttons button {
+.our-rackets--controls-buttons button {
   background-color: var(--color-primary);
   width: 54px;
   height: 54px;
@@ -61,32 +61,45 @@ section.our-rackets .our-rackets--controls-buttons button {
   place-content: center;
 }
 
-section.our-rackets .our-rackets--controls-buttons button:first-child img {
+.our-rackets--controls-buttons button:first-child img {
   transform: rotate(180deg) translateX(2px);
 }
 
-section.our-rackets .our-rackets--controls-buttons button.disabled {
+.our-rackets--controls-buttons button.disabled {
   background-color: rgb(255 255 255 / 0.2);
   border-color: var(--color-light);
   box-shadow: none;
 }
 
-section.our-rackets .our-rackets--items {
+.our-rackets--items {
+  overflow-x: hidden;
+}
+
+.our-rackets--items ul {
+  list-style: none;
+  display: flex;
+  gap: 36px;
   overflow-x: auto;
   padding: 50px;
 }
 
-section.our-rackets .our-rackets--items ul {
-  list-style: none;
-  display: flex;
-  gap: 36px;
+.our-rackets--items li {
+  flex: 0 0 288px;
+  position: relative;
+  height: 344px;
+  background-color: var(--color-grey-lighter);
+  border-radius: 18px;
+  overflow: hidden;
 }
 
-section.our-rackets .our-rackets--items ul li {
-  position: relative
+.our-rackets--items img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
-section.our-rackets .our-rackets--items ul li span {
+
+.our-rackets--item-index {
   background-color: var(--color-primary);
   color: var(--color-light);
   display: block;
@@ -105,7 +118,7 @@ section.our-rackets .our-rackets--items ul li span {
     display: flex;
   }
 
-  section.our-rackets .our-rackets--controls {
+  .our-rackets--controls {
     min-width: 530px;
   }
 }

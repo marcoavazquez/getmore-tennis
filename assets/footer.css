@@ -3,7 +3,7 @@ footer.footer {
   padding: 76px 0;
 }
 
-footer.footer .footer--container {
+.footer--container {
   display: flex;
   flex-direction: column;
   gap: 36px;
@@ -14,28 +14,29 @@ footer.footer ul {
   list-style: none;
 }
 
-footer.footer nav.footer--menu ul {
+footer.footer .footer--menu ul {
   font-size: 13px;
   letter-spacing: 1.14px;
   flex-direction: column;
-  gap: 18px;
+  gap: 24px;
   padding-bottom: 18px;
 }
 
 footer.footer ul.footer--social-media {
   gap: 12px;
+  padding-top: 18px;
 }
 
-footer.footer ul li a {
+footer.footer a {
   color: var(--color-dark-two);
   text-decoration: none;
 }
 
-footer.footer ul li.active a {
-  font-weight: 600;
+.footer--menu li.active a {
+  font-weight: bold;
 }
 
-footer.footer .footer--logo {
+.footer--logo {
   width: 55px;
   height: 55px;
   align-self: end;
@@ -52,6 +53,10 @@ footer.footer .footer--logo {
   footer.footer nav.footer--menu ul {
     flex-direction: row;
     gap: 50px;
+  }
+
+  footer.footer ul.footer--social-media {
+    padding-top: 0;
   }
 
   footer.footer .footer--logo {
