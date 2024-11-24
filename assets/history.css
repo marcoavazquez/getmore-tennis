@@ -6,12 +6,36 @@ section.history {
   align-items: center;
 }
 
+section.history .text-primary {
+  padding: 18px 0;
+  letter-spacing: 1.8px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+section.history .history--title {
+  font-size: 50px;
+  padding-bottom: 18px;
+  line-height: 57px;
+  letter-spacing: -18px;
+  max-width: 560px;
+}
+
+section.history .history--title span {
+  letter-spacing: 0px;
+}
+
 section.history .history--text {
-  padding: 32px 0;
+  padding: 18px 0;
+  max-width: 400px;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+
 }
 
 section.history a {
   align-self: flex-end;
+  margin-top: 24px;
 }
 
 @media screen and (min-width: 960px) {

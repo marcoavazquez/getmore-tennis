@@ -1,11 +1,13 @@
 .button {
   display: inline-flex;
   text-transform: uppercase;
-
+  font-size: 13px;
+  font-weight: 500;
   border-width: 1px;
   border-style: solid;
   border-radius: 52px;
-  padding: 16px 32px;
+  padding: 18px 32px;
+  min-width: 234px;
 }
 
 a.button {
@@ -26,7 +28,7 @@ a.button {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 8px;
 }
 
 .button-icon svg,

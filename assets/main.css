@@ -23,7 +23,7 @@
 
 @font-face {
   font-family: 'HelveticaNeue';
-  src: url('{{ "HelveticaNeueMedium.otf" | asset_url }}') format('otf');
+  src: url('{{ "HelveticaNeueBlack.otf" | asset_url }}') format('otf');
   font-weight: 500;
 }
 

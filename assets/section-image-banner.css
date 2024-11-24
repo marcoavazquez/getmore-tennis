@@ -16,7 +16,14 @@
 
 .image-banner h2 {
   color: var(--color-light);
-  font-size: 200%;
+  font-size: 54px;
+  max-width: 710px;
+  line-height: 68px;
+  padding-bottom: 36px;
+}
+
+.image-banner h2 strong {
+  color: var(--color-primary);
 }
 
 .image-banner .container {

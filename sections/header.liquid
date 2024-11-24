@@ -7,14 +7,14 @@
     <nav class="header--main-menu">
       <ul>
         {% for link in linklists['main-menu'].links %}
-          <li>
+          <li class="{% if link.active %}active{% endif %}">
             <a href="{{ link.url }}">{{ link.title }}</a>
           </li>
         {% endfor %}
       </ul>
     </nav>
     <ul class="header--lang-menu">
-      <li>
+      <li class="active">
         <a href="#">Es</a>
       </li>
       <li>

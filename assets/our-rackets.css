@@ -1,5 +1,6 @@
 section.our-rackets {
   max-width: 1920px;
+  margin: 0 auto;
 }
 
 section.our-rackets .our-rackets--controls {
@@ -15,14 +16,20 @@ section.our-rackets .our-rackets--controls-content {
 
 section.our-rackets .our-rackets--controls h3 {
   font-size: 50px;
+  line-height: 64px;
   margin: 0;
+}
+
+section.our-rackets .our-rackets--controls p {
+  line-height: 30px;
+  letter-spacing: 0.5px;
 }
 
 section.our-rackets .our-rackets--controls ul {
   list-style: none;
   padding: 36px 0;
   display: flex;
-  gap: 20px;
+  gap: 22px;
 }
 
 section.our-rackets .our-rackets--controls ul li {
@@ -34,6 +41,10 @@ section.our-rackets .our-rackets--controls ul li {
 
 section.our-rackets .our-rackets--controls ul li.active {
   background-color: var(--color-primary);
+}
+
+section.our-rackets .our-rackets--controls-buttons button {
+  margin-left: -10px;
 }
 
 
