@@ -1,8 +1,8 @@
-{{ 'history.css' | asset_url | stylesheet_tag }}
+{{ 'section-history.css' | asset_url | stylesheet_tag }}
 
 <section class="history">
   <div class="container history--container">
-    <div class="text-primary">TENNIS</div>
+    <div class="text-primary" aria-hidden="">TENNIS</div>
     <div class="history--content">
       <h3 class="history--title">
         <span>Raquetas.</span>
@@ -11,9 +11,9 @@
       </h3>
       <div class="history--text text-grey">Conoce nuestras raquetas y aprende a jugar Tennis cómo un profesional</div>
     </div>
-    <a href="#" class="button button-dark button-icon">
-      Historia
-      <span>&xrarr;</span>
+    <a href="#" class="button button-dark button-icon" role="button" aria-label="Historia">
+      <span>Historia</span>
+      <img src="{{ 'icon-arrow-thin.svg' | asset_url }}" class="icon" alt="Historua">
     </a>
   </div>
 </section>

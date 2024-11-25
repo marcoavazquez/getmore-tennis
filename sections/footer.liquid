@@ -1,10 +1,10 @@
-{{ 'footer.css' | asset_url | stylesheet_tag }}
+{{ 'section-footer.css' | asset_url | stylesheet_tag }}
 
 <footer class="footer">
   <div class="footer--container container">
     <div class="footer--content">
-      <nav class="footer--menu">
-        <ul>
+      <nav class="footer--menu" role="navigation">
+        <ul role="list">
           {% for link in linklists['main-menu'].links %}
             <li class="{% if link.active %}active{% endif %}">
               <a href="{{ link.url }}">{{ link.title }}</a>
@@ -12,21 +12,21 @@
           {% endfor %}
         </ul>
       </nav>
-      <ul class="footer--social-media">
+      <ul class="footer--social-media" role="list">
         <li>
-          <a href="#"><img src="{{ 'linkedin.svg' | asset_url }}" alt="Linkedin"></a>
+          <a href="#"><img src="{{ 'icon-linkedin.svg' | asset_url }}" alt="Linkedin" loading="lazy"></a>
         </li>
         <li>
-          <a href="#"><img src="{{ 'vimeo.svg' | asset_url }}" alt="Vimeo"></a>
+          <a href="#"><img src="{{ 'icon-vimeo.svg' | asset_url }}" alt="Vimeo" loading="lazy"></a>
         </li>
         <li>
-          <a href="#"><img src="{{ 'instagram.svg' | asset_url }}" alt="Instagram"></a>
+          <a href="#"><img src="{{ 'icon-instagram.svg' | asset_url }}" alt="Instagram" loading="lazy"></a>
         </li>
         <li>
-          <a href="#"><img src="{{ 'twitter.svg' | asset_url }}" alt="Twitter/X"></a>
+          <a href="#"><img src="{{ 'icon-twitter.svg' | asset_url }}" alt="Twitter/X" loading="lazy"></a>
         </li>
         <li>
-          <a href="#"><img src="{{ 'facebook.svg' | asset_url }}" alt="Facebook"></a>
+          <a href="#"><img src="{{ 'icon-facebook.svg' | asset_url }}" alt="Facebook" loading="lazy"></a>
         </li>
       </ul>
     </div>

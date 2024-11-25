@@ -11,19 +11,19 @@
 
 @font-face {
   font-family: 'HelveticaNeue';
-  src: url('{{ "HelveticaNeueRoman.otf" | asset_url }}') format('otf');
+  src: url('{{ "fonts/HelveticaNeueRoman.otf" | asset_url }}') format('otf');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'HelveticaNeue';
-  src: url('{{ "HelveticaNeueBold.otf" | asset_url }}') format('otf');
+  src: url('{{ "fonts/HelveticaNeueBold.otf" | asset_url }}') format('otf');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'HelveticaNeue';
-  src: url('{{ "HelveticaNeueBlack.otf" | asset_url }}') format('otf');
+  src: url('{{ "fonts/HelveticaNeueBlack.otf" | asset_url }}') format('otf');
   font-weight: 500;
 }
 

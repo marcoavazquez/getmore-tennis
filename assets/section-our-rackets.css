@@ -37,6 +37,7 @@ section.our-rackets {
   height: 8px;
   background-color: var(--color-light);
   border-radius: 8px;
+  transition: 0.25s ease-in;
 }
 
 .our-rackets--controls ul li.active {
@@ -45,6 +46,7 @@ section.our-rackets {
 
 .our-rackets--controls-buttons button {
   margin-left: -10px;
+  transition: 0.25s ease-in-out;
 }
 
 

@@ -1,4 +1,4 @@
-{{ 'our-rackets.css' | asset_url | stylesheet_tag }}
+{{ 'section-our-rackets.css' | asset_url | stylesheet_tag }}
 
 {% style %}
   .our-rackets--controls {
@@ -12,27 +12,27 @@
     <div class="our-rackets--controls-content">
       <h3>Nuestras <b>Raquetas</b></h3>
       <p>Conoce nuestras raquetas y aprende a jugar Tennis cómo un profesional.</p>
-      <ul class="our-rackets--controls-dots">
+      <ul class="our-rackets--controls-dots" id="controls-dots">
         {%- for product in collections.all.products %}
-          <li class="{%- if forloop.index == 1  %} active {%- endif  %}"></li>
+          <li></li>
         {%- endfor %}
       </ul>
       <div class="our-rackets--controls-buttons">
-        <button class="disabled">
-          <img src="{{ 'arrow.svg' | asset_url }}" alt="Anterior">
+        <button id="button-previous" class="disabled" disabled aria-label="Anterior">
+          <img src="{{ 'icon-arrow.svg' | asset_url }}" alt="Anterior" loading="lazy">
         </button>
-        <button>
-          <img src="{{ 'arrow.svg' | asset_url }}" alt="Siguiente">
+        <button id="button-next" aria-label="Siguiente">
+          <img src="{{ 'icon-arrow.svg' | asset_url }}" alt="Siguiente" loading="lazy">
         </button>
       </div>
     </div>
   </div>
   <div class="our-rackets--items">
-    <ul>
+    <ul id="our-rackets--items" role="list">
       {%- for product in collections.all.products %}
         <li class="our-rackets--item">
           <span class="our-rackets--item-index">{{ forloop.index }}</span>
-          <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+          <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}" loading="lazy">
         </li>
       {%- endfor %}
     </ul>

@@ -1,5 +1,10 @@
-{{ 'secondary-banner.css' | asset_url | stylesheet_tag }}
+{{ 'section-secondary-banner.css' | asset_url | stylesheet_tag }}
 
 <section class="secondary-banner">
-  <img src="{{ 'action.jpg' | asset_url }}" alt="banner">
+  <img
+    src="{{ 'action.jpg' | asset_url }}"
+    alt="Tennis"
+    loading="lazy"
+    srcset="{{ 'action.jpg' | asset_url }} 1440w, {{ 'action@2x.jpg' | asset_url }} 2880w, {{ 'action@3x.jpg' | asset_url }} 4320w"
+  >
 </section>

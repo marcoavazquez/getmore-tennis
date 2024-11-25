@@ -10,10 +10,10 @@
     {% endif %}
 
     {{ 'main.css' | asset_url | stylesheet_tag }}
-    {{ 'header.css' | asset_url | stylesheet_tag }}
-    {{ 'buttons.css' | asset_url | stylesheet_tag }}
+    {{ 'component-button.css' | asset_url | stylesheet_tag }}
 
     <script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'section-ourRackets.js' | asset_url }}" defer="defer"></script>
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">

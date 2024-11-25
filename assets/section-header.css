@@ -38,6 +38,7 @@ header.header {
   transform: translateY(-100%);
   transition: 0.5s ease-in-out;
   overflow: hidden;
+  padding-bottom: 18px;
 }
 
 .header--menu-container.visible {

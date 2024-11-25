@@ -14,7 +14,7 @@ footer.footer ul {
   list-style: none;
 }
 
-footer.footer .footer--menu ul {
+.footer--menu ul {
   font-size: 13px;
   letter-spacing: 1.14px;
   flex-direction: column;
@@ -22,7 +22,7 @@ footer.footer .footer--menu ul {
   padding-bottom: 18px;
 }
 
-footer.footer ul.footer--social-media {
+.footer--social-media {
   gap: 12px;
   padding-top: 18px;
 }
@@ -44,22 +44,22 @@ footer.footer a {
 
 @media screen and (min-width: 960px) {
 
-  footer.footer .footer--container {
+  .footer--container {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
 
-  footer.footer nav.footer--menu ul {
+  .footer--menu ul {
     flex-direction: row;
     gap: 50px;
   }
 
-  footer.footer ul.footer--social-media {
+  .footer--social-media {
     padding-top: 0;
   }
 
-  footer.footer .footer--logo {
+  .footer--logo {
     align-self: initial;
   }
 }

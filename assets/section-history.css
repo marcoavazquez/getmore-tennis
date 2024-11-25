@@ -13,7 +13,7 @@ section.history .text-primary {
   font-weight: 500;
 }
 
-section.history .history--title {
+.history--title {
   font-size: 50px;
   padding-bottom: 18px;
   line-height: 57px;
@@ -21,11 +21,11 @@ section.history .history--title {
   max-width: 560px;
 }
 
-section.history .history--title span {
+.history--title span {
   letter-spacing: 0px;
 }
 
-section.history .history--text {
+.history--text {
   padding: 18px 0;
   max-width: 400px;
   line-height: 32px;
@@ -40,12 +40,12 @@ section.history a {
 
 @media screen and (min-width: 960px) {
 
-  section.history .history--container {
+  .history--container {
     display: flex;
     gap: 50px;
   }
 
-  section.history .history--title {
+  .history--title {
     margin: 0;
   }
 }

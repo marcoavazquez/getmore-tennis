@@ -6,5 +6,4 @@ window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('#menu');
     menu.classList.toggle('visible');
   });
-
 });

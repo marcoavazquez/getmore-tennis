@@ -1,14 +1,16 @@
+{{ 'section-header.css' | asset_url | stylesheet_tag }}
+
 <header class="header">
   <a href="/" class="header--logo">
     <img src="{{ 'logo.svg' | asset_url }}" class="header--logo-image" alt="Empresa" width="37px" height="37px">
     <span class="header--line"></span>
   </a>
-  <button class="header--menu-button" id="menu-button">
+  <button class="header--menu-button" id="menu-button" role="button">
     <img src="{{ 'icon-hamburger.svg' | asset_url }}" alt="menú" width="32px" height="32px">
   </button>
   <div class="header--menu-container container" id="menu">
-    <nav class="header--main-menu">
-      <ul>
+    <nav class="header--main-menu" role="navigation">
+      <ul role="list">
         {% for link in linklists['main-menu'].links %}
           <li class="{% if link.active %}active{% endif %}">
             <a href="{{ link.url }}">{{ link.title }}</a>
@@ -38,12 +40,7 @@
     "sameAs": [
       {{ settings.social_twitter_link | json }},
       {{ settings.social_facebook_link | json }},
-      {{ settings.social_pinterest_link | json }},
       {{ settings.social_instagram_link | json }},
-      {{ settings.social_tiktok_link | json }},
-      {{ settings.social_tumblr_link | json }},
-      {{ settings.social_snapchat_link | json }},
-      {{ settings.social_youtube_link | json }},
       {{ settings.social_vimeo_link | json }}
     ],
     "url": {{ request.origin | append: page.url | json }}
