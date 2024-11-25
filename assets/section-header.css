@@ -19,11 +19,11 @@ header.header {
 
 .header--menu-button {
   background: none;
+  align-self: flex-end;
   border: none;
   padding: 0;
-  filter: invert();
-  align-self: flex-end;
   margin-right: 36px;
+  filter: invert();
 }
 
 .header--menu-container {
@@ -32,13 +32,15 @@ header.header {
   flex-grow: 1;
   position: absolute;
   top: -86px;
-  left: 0;
-  width: 100%;
+  left: 18px;
+  border-radius: 18px;
   padding-top: 16px;
+  padding-bottom: 18px;
+  width: calc(100% - 36px);
   transform: translateY(-100%);
   transition: 0.5s ease-in-out;
   overflow: hidden;
-  padding-bottom: 18px;
+  box-shadow: 0 9px 9px rgb(0 0 0 / 0.3);
 }
 
 .header--menu-container.visible {
@@ -48,14 +50,7 @@ header.header {
   z-index: 1;
 }
 
-.header--menu-container ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.header--menu-container ul li a {
-  text-decoration: none;
+.header--menu-container a {
   color: var(--color-dark);
   display: inline-block;
 }
@@ -118,6 +113,7 @@ header.header {
     position: relative;
     top: 0;
     transform: translateY(0%);
+    box-shadow: none;
   }
 
   .header--main-menu {
@@ -129,11 +125,11 @@ header.header {
     gap: 60px;
   }
 
-  .header--menu-container ul li a {
+  .header--menu-container a {
     color: var(--color-light);
   }
 
-  .header--main-menu ul li.active::after {
+  .header--main-menu li.active::after {
     background-color: var(--color-light);
   }
 

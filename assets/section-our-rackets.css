@@ -4,9 +4,9 @@ section.our-rackets {
 }
 
 .our-rackets--controls {
-  color: var(--color-light);
   display: flex;
   justify-content: end;
+  color: var(--color-light);
   padding: 62px;
 }
 
@@ -26,17 +26,16 @@ section.our-rackets {
 }
 
 .our-rackets--controls ul {
-  list-style: none;
-  padding: 36px 0;
   display: flex;
   gap: 22px;
+  padding: 36px 0;
 }
 
 .our-rackets--controls ul li {
-  width: 8px;
-  height: 8px;
   background-color: var(--color-light);
   border-radius: 8px;
+  width: 8px;
+  height: 8px;
   transition: 0.25s ease-in;
 }
 
@@ -51,16 +50,15 @@ section.our-rackets {
 
 
 .our-rackets--controls-buttons button {
+  display: inline-grid;
+  place-content: center;
   background-color: var(--color-primary);
-  width: 54px;
-  height: 54px;
   border-radius: 50%;
   border: 1px solid transparent;
   margin-right: 20px;
+  width: 54px;
+  height: 54px;
   box-shadow: 0 8px 8px rgb(0 0 0 / 0.3);
-
-  display: inline-grid;
-  place-content: center;
 }
 
 .our-rackets--controls-buttons button:first-child img {
@@ -78,7 +76,6 @@ section.our-rackets {
 }
 
 .our-rackets--items ul {
-  list-style: none;
   display: flex;
   gap: 36px;
   overflow-x: auto;
@@ -102,17 +99,16 @@ section.our-rackets {
 
 
 .our-rackets--item-index {
+  display: grid;
+  place-content: center;
   background-color: var(--color-primary);
   color: var(--color-light);
-  display: block;
-  width: 40px;
-  height: 40px;
   border-radius: 50%;
   position: absolute;
   top: 16px;
   left: 16px;
-  display: grid;
-  place-content: center;
+  width: 40px;
+  height: 40px;
 }
 
 @media screen and (min-width: 960px) {

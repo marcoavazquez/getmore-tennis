@@ -1,24 +1,24 @@
 section.history {
-  background-color: var(--color-grey-lighter);
-  padding: 72px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--color-grey-lighter);
+  padding: 72px 0;
 }
 
 section.history .text-primary {
-  padding: 18px 0;
-  letter-spacing: 1.8px;
   font-size: 15px;
   font-weight: 500;
+  letter-spacing: 1.8px;
+  padding: 18px 0;
 }
 
 .history--title {
   font-size: 50px;
-  padding-bottom: 18px;
   line-height: 57px;
   letter-spacing: -18px;
   max-width: 560px;
+  padding-bottom: 18px;
 }
 
 .history--title span {
@@ -26,10 +26,10 @@ section.history .text-primary {
 }
 
 .history--text {
-  padding: 18px 0;
-  max-width: 400px;
   line-height: 32px;
   letter-spacing: 0.5px;
+  max-width: 400px;
+  padding: 18px 0;
 
 }
 

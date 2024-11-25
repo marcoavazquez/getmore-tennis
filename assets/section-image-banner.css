@@ -1,16 +1,16 @@
 .image-banner {
-  height: 785px;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
+  height: 785px;
 }
 
 .image-banner h2 {
   color: var(--color-light);
   font-size: 54px;
-  max-width: 710px;
   line-height: 68px;
+  max-width: 710px;
   padding-bottom: 36px;
 }
 
